@@ -66,8 +66,20 @@
             display: block;
             margin: 5px 0;
         }
-        a{
+        #signupbutton{
             text-decoration: none;
+            color: #000;
+            font-weight: bold;
+        }
+        #signinbutton{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        #google-icon{
+          box-shadow: 2px 2px 10px 2px rgb(185, 181, 181);
+          size: 100px;
+          padding: 10px 9px;
         }
     </style>
 </head>
@@ -75,7 +87,7 @@
 
    <form class="form">
     <p>Don't have an account?
-        <a style="color: #000;font-weight: bold"; href="index.html">Sign up</a>
+        <a id="signupbutton" href="index.html">Sign up</a>
     </p>
     <br>
     <h1>Sign In</h1>
@@ -95,13 +107,13 @@
     <label for="checkbox">I've Read And Agree With <b>The Terms Of Service</b> And Our <b>Privacy Policy</b></label>
     <br>
     <br>
-<button type="submit" id="submit_button"><a style="color: white;" href="table.html">Sign In</a></button>
+<button type="submit" id="submit_button"><a id="signinbutton" href="table.html">Sign In</a></button>
 <br>
 <br>
 <br>
 <h4>&nbsp;&nbsp;Or Sign In With&nbsp;&nbsp;</h4>
 <div class="brands">
-    <i class="fa-brands fa-google"style="box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);size: 10px;"></i>
+    <i class="fa-brands fa-google"id="google-icon"></i>
     <i class="fa-brands fa-facebook"></i>
 </div>
 </form> 
